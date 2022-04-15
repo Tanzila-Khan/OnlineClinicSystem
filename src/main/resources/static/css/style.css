@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*,*before,*after{
+	margin:0;
+	padding:0;	
+	box-sizing: border-box;
+}
+html{
+	box-sizing: border-box;
+	scroll-behavior:smooth;
+}
+.homeBg{
+	width:100vw;
+	height:100vh;
+	background: url(../img/clinicBg1.jpg) right bottom;
+	background-size:cover;
+
+}
+.heading{
+	font-family: 'Inter', sans-serif;
+	font-size: 46px;
+	color:#0D9AB9;
+}
+.login-div{
+	width:500px;
+	height:570px;
+	background-color: #FEFDFD;
+}
+
+.login-logo{
+	width:100px;
+	height:100px;
+		
+}
+.login-heading{
+	font-family: 'Inter', sans-serif;
+	font-size: 26px;
+	color:#0D9AB9;
+}
+.login-icon{
+	width:20px;
+	height:20px;
+}
+.input-group{
+	border-bottom: 2px solid #0D9AB9;
+
+}
+.input-group input{
+	display:inline-block;
+	outline:none;
+	border:none;
+}
+.login-btn{
+	width:290px;
+	background-color: #0D9AB9;
+	color:#fff;
+}
+.login-btn:hover{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color:#fff;
+}
+
+.p1{
+		font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	color:#0D9AB9;
+}
+.p2{
+	color:#585858;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0D9AB9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #0D9AB9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#0D9AB9;
+}
+
+ a{
+	color:#0D9AB9;
+	 text-decoration: none;
+}

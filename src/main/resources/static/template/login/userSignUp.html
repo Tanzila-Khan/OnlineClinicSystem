@@ -1,0 +1,88 @@
+
+<div class="container">
+
+<div class="login-div mx-auto ">
+<div class="container">
+<div class="login-logo mx-auto  pt-3">
+<img src="../../img/login-logo.png" class="img-fluid"/>
+</div>
+<p class="login-heading text-center mt-3">
+Sign up
+</p>
+
+
+<form ng-submit="submitUserForm()" name="myForm" method="post">
+ 
+
+  <div class="container">
+    <div class="input-group  pb-2">
+    <label for="Fname"><img src="../../img/vector.png" class="login-icon "></label>
+    <input type="text" placeholder="First name" ng-model="user.firstname" class="ms-3 p1" required>
+    </div>
+
+    <div class="input-group  pb-2">
+    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
+    <input type="password" placeholder="Enter Password" ng-model="user.pwd" class="ms-3 p1" required>
+    </div>
+
+ <div class="input-group  pb-2">
+    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
+    <input type="text" placeholder="last name" ng-model="user.lastname" class="ms-3 p1" required>
+    </div>
+     <div class="input-group  pb-2">
+    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
+    <input type="date" placeholder="Date of birth" ng-model="user.dob" class="ms-3 p1" required>
+    </div>
+ <div class="input-group  pb-2">
+    <label for="uname"><img src="../../img/vector.png" class="login-icon "></label>
+    <input type="text" placeholder="Enter Email Address" ng-model="user.email" class="ms-3 p1" required>
+    </div>
+
+    <div class="input-group  pb-2">
+    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
+    <input type="text" placeholder="Present address" ng-model="user.presentAddress" class="ms-3 p1" required>
+    </div>
+
+ <div class="input-group  pb-2">
+    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
+    <input type="text" placeholder="Permanent address" ng-model="user.permanentAddress" class="ms-3 p1" required>
+    </div>
+     <div class="input-group  pb-2">
+    <label for="gender"> Select you gender</label>
+<select ng-model="user.gender">
+	<option value="none" selected>Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+	<option value="other">other</option>
+</select>
+    </div>
+     <div class="input-group  pb-2">
+    <label for="uname"><img src="../../img/vector.png" class="login-icon "></label>
+    <input type="number" placeholder="Enter age" ng-model="user.age" class="ms-3 p1" required>
+    </div>
+
+    <div class="input-group  pb-2">
+    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
+    <input type="number" placeholder="Phone Number" ng-model="user.phoneNo" class="ms-3 p1" required>
+    </div>
+
+    <div class="">
+    <button type="submit" class="btn login-btn mt-5 ">Register</button>
+    </div>
+   
+      
+   
+   
+   
+   
+  </div>
+
+
+  
+</form>
+
+
+</div>
+
+</div>
+</div >
