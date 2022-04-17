@@ -26,11 +26,20 @@ html{
 	height:570px;
 	background-color: #FEFDFD;
 }
-
+.user-Register .login-div{
+		width:900px;
+	height:600px;
+	background-color: #FEFDFD;
+}
 .login-logo{
 	width:100px;
 	height:100px;
 		
+}
+
+
+#myForm ul li{
+	list-style: none;
 }
 .login-heading{
 	font-family: 'Inter', sans-serif;
@@ -41,14 +50,16 @@ html{
 	width:20px;
 	height:20px;
 }
-.input-group{
-	border-bottom: 2px solid #0D9AB9;
-
+.input-group label{
+	color:#0D9AB9;
+	font-family: 'Inter', sans-serif;
 }
 .input-group input{
 	display:inline-block;
 	outline:none;
 	border:none;
+	border-bottom: 2px solid #0D9AB9;
+
 }
 .login-btn{
 	width:290px;
@@ -61,7 +72,7 @@ html{
 }
 
 .p1{
-		font-family: 'Inter', sans-serif;
+		
 	font-size: 16px;
 	color:#0D9AB9;
 }

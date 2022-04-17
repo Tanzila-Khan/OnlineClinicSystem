@@ -8,5 +8,5 @@ import com.OnlineClinicSystem.entity.userProfile;
 
 @Repository
 public interface userProfileRepo extends JpaRepository<userProfile, Long>{
-userProfile findByemail(String email);
+userProfile findByemailID(String email);
 }

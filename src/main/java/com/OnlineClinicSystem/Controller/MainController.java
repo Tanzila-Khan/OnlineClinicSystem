@@ -43,9 +43,9 @@ public class MainController {
 	}
 	@GetMapping("/user/{email}")
 	public ResponseEntity<userProfile> getUserByemail(@PathVariable("email") final String email) {
-	Optional	<userProfile> user = Optional.of(repo.findByemail(email));
+	Optional	<userProfile> user = Optional.of(repo.findByemailID(email));
 	userProfile u=user.get();
-	System.out.println(u.getId()+" " +u.getDob()+" "+u.getFirstname());
+	System.out.println();
 	return new ResponseEntity<userProfile>(u, HttpStatus.OK);
 	}
 	

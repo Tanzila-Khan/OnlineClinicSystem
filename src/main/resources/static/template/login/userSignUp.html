@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="user-Register container">
 
 <div class="login-div mx-auto ">
 <div class="container">
@@ -11,62 +11,124 @@ Sign up
 </p>
 
 
-<form ng-submit="submitUserForm()" name="myForm" method="post">
+<form ng-submit="submitUserForm()" id="myForm" name="myForm" method="post" >
  
 
   <div class="container">
-    <div class="input-group  pb-2">
-    <label for="Fname"><img src="../../img/vector.png" class="login-icon "></label>
-    <input type="text" placeholder="First name" ng-model="user.firstname" class="ms-3 p1" required>
+  
+  <ul class="row">
+  <div class="col-md-5">
+  
+     <li>
+    <div class="input-group   row ">
+    <label for="fname" class=" col-4">First Name</label>
+    <input type="text" id="fname" placeholder="Enter age" ng-model="user.firstName" class="col-7 offset-1 p1" required>
     </div>
+  </li>
 
-    <div class="input-group  pb-2">
-    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
-    <input type="password" placeholder="Enter Password" ng-model="user.pwd" class="ms-3 p1" required>
-    </div>
-
- <div class="input-group  pb-2">
-    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
-    <input type="text" placeholder="last name" ng-model="user.lastname" class="ms-3 p1" required>
-    </div>
-     <div class="input-group  pb-2">
-    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
-    <input type="date" placeholder="Date of birth" ng-model="user.dob" class="ms-3 p1" required>
-    </div>
- <div class="input-group  pb-2">
-    <label for="uname"><img src="../../img/vector.png" class="login-icon "></label>
-    <input type="text" placeholder="Enter Email Address" ng-model="user.email" class="ms-3 p1" required>
-    </div>
-
-    <div class="input-group  pb-2">
-    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
-    <input type="text" placeholder="Present address" ng-model="user.presentAddress" class="ms-3 p1" required>
-    </div>
-
- <div class="input-group  pb-2">
-    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
-    <input type="text" placeholder="Permanent address" ng-model="user.permanentAddress" class="ms-3 p1" required>
-    </div>
-     <div class="input-group  pb-2">
-    <label for="gender"> Select you gender</label>
-<select ng-model="user.gender">
+  <li>
+   <div class="input-group  pt-4 row">
+      <label for="gender" class=" col-4">Gender</label>
+<select ng-model="user.gender" class="col-7 offset-1">
 	<option value="none" selected>Gender</option>
 	<option value="male">Male</option>
 	<option value="female">Female</option>
 	<option value="other">other</option>
-</select>
-    </div>
-     <div class="input-group  pb-2">
-    <label for="uname"><img src="../../img/vector.png" class="login-icon "></label>
-    <input type="number" placeholder="Enter age" ng-model="user.age" class="ms-3 p1" required>
-    </div>
+</select>	
+  </li>
 
-    <div class="input-group  pb-2">
-    <label for="psw"><img src="../../img/vector1.png" class="login-icon"></label>
-    <input type="number" placeholder="Phone Number" ng-model="user.phoneNo" class="ms-3 p1" required>
-    </div>
 
-    <div class="">
+
+  <li>
+    <div class="input-group  pt-4 row ">
+    <label for="street" class="col-4">Street</label>
+    <input type="text" id="street" placeholder="Enter age" ng-model="user.street" class="col-7 offset-1 p1" required>
+    </div>
+  
+  </li>
+
+  <li>
+   <div class="input-group  pt-4 row">
+    <label for="state" class=" col-4">State</label>
+    <input type="text" id="state" placeholder="Enter age" ng-model="user.state" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+
+
+ <li>
+   <div class="input-group  pt-4 row">
+    <label for="mobileNo" class=" col-4">Mobile No</label>
+    <input type="number" id="mobileNo" placeholder="Enter age" ng-model="user.mobileNo" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+
+
+ <li>
+   <div class="input-group  pt-4 row">
+    <label for="password" class=" col-4">Password</label>
+    <input type="text" id="password" placeholder="Enter age" ng-model="user.password" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+
+
+  
+  </div>
+<div  class="col-md-6 offset-md-1">
+  <li>
+   <div class="input-group   row">
+    <label for="lname" class=" col-4">Last Name</label>
+    <input type="text" id="lname" placeholder="Enter age" ng-model="user.lastName" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+   
+   <li>
+   <div class="input-group  pt-4 row">
+    <label for="dateOfBirth" class=" col-4">Date Of Birth</label>
+    <input type="date" id="dateOfBirth" placeholder="Enter age" ng-model="user.dateOfBirth" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+   
+
+  <li>
+   <div class="input-group  pt-4 row">
+    <label for="city" class=" col-4">City</label>
+    <input type="text" id="city" placeholder="Enter age" ng-model="user.city" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+  <li>
+  
+   <div class="input-group  pt-4 row">
+    <label for="pincode" class=" col-4">Pincode</label>
+    <input type="number" id="pincode" placeholder="Enter age" ng-model="user.pincode" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+ 
+  <li>
+   <div class="input-group  pt-4 row">
+    <label for="emailID" class=" col-4">Email ID</label>
+    <input type="text" id="emailID" placeholder="Enter age" ng-model="user.emailID" class="col-7 offset-1 p1" required>
+    </div>
+  </li>
+ 
+  <li>
+   <div class="input-group  pt-4 row">
+    <label for="cPassword" class=" col-4">Confirm Password</label>
+    <input type="text" id="cPassword" placeholder="Enter age" ng-model="user.confirmPassword" name="confirmPassword" compare-to="user.password" class="col-7 offset-1 p1" required>
+   
+    <div ng-messages="myForm.confirmPassword.$error" ng-if="myForm.confirmPassword == myForm.password">
+                            <span ng-message="compareTo">Password not matched.</span>
+                        </div>
+    </div>
+  </li>
+
+</div>
+
+
+  </ul>
+  
+  
+
+    <div class="text-center">
     <button type="submit" class="btn login-btn mt-5 ">Register</button>
     </div>
    

@@ -1,5 +1,6 @@
 package com.OnlineClinicSystem.entity;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
@@ -10,88 +11,89 @@ import javax.persistence.Id;
 public class userProfile {
 	@Id
 	@GeneratedValue
-private Long id;
-
-public Long getId() {
-		return id;
+	private Long userID;
+	private 	String firstName;
+	private String lastName;
+	private Date dateOfBirth;
+	private String gender;
+	private String street;
+	private String city;
+	private String state;
+	private Long pincode;
+	private Long mobileNo;
+	private String emailID;
+	private String password;
+	public Long getUserID() {
+		return userID;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setUserID(Long userID) {
+		this.userID = userID;
 	}
-	
-	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
 	public String getGender() {
 		return gender;
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public int getAge() {
-		return age;
+	public String getStreet() {
+		return street;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setStreet(String street) {
+		this.street = street;
 	}
-	public LocalDate getDob() {
-		return dob;
+	
+	public String getCity() {
+		return city;
 	}
-	public void setDob(LocalDate dob) {
-		this.dob = dob;
+	public void setCity(String city) {
+		this.city = city;
 	}
-	public String getPresentAddress() {
-		return presentAddress;
+	public String getState() {
+		return state;
 	}
-	public void setPresentAddress(String presentAddress) {
-		this.presentAddress = presentAddress;
+	public void setState(String state) {
+		this.state = state;
 	}
-	public String getPermanentAddress() {
-		return permanentAddress;
+	public Long getPincode() {
+		return pincode;
 	}
-	public void setPermanentAddress(String permanentAddress) {
-		this.permanentAddress = permanentAddress;
+	public void setPincode(Long pincode) {
+		this.pincode = pincode;
 	}
-	public Long getPhoneNo() {
-		return phoneNo;
+	public Long getMobileNo() {
+		return mobileNo;
 	}
-	public void setPhoneNo(Long phoneNo) {
-		this.phoneNo = phoneNo;
+	public void setMobileNo(Long mobileNo) {
+		this.mobileNo = mobileNo;
 	}
-	public String getEmail() {
-		return email;
+	public String getEmailID() {
+		return emailID;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmailID(String emailID) {
+		this.emailID = emailID;
 	}
-public String getFirstname() {
-	return firstname;
-}
-public void setFirstname(String firstname) {
-	this.firstname = firstname;
-}
-public String getLastname() {
-	return lastname;
-}
-public void setLastname(String lastname) {
-	this.lastname = lastname;
-}
-
-private String firstname;
-private String lastname;
-private String gender;
-private int age;
-private LocalDate dob;
-private String presentAddress;
-private String permanentAddress;
-private Long phoneNo;
-private String email;
-private String pwd;
-
-public String getPwd() {
-	return pwd;
-}
-public void setPwd(String pwd) {
-	this.pwd = pwd;
-}
-
-
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }
